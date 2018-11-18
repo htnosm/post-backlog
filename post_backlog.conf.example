@@ -3,17 +3,29 @@ _SPACE="example"
 # API Key
 _API_KEY=""
 
-# get_backlog_ids で使用するデフォルト値(オプション付与優先)
+# get_backlog_ids で使用するデフォルト値(実行時オプション優先)
 # プロジェクト名
 _PROJECT="EXAMPLE"
 # 種別
 _ISSUE_TYPE="タスク"
 # 優先度
 _PRIORITY="中"
+# カテゴリー (カンマ区切り)
+_CATEGORIES=""
 
-# post_backlog で使用するデフォルト値(オプション付与優先)
+# post_backlog で使用するデフォルト値(実行時オプション優先)
 # get_backlog_ids の結果を入力
+# プロジェクトID
 _PROJECT_ID=""
+# 種別ID
 _ISSUE_TYPE_ID=""
+# 優先度ID
 _PRIORITY_ID=""
+# カテゴリーID (スペース区切り)
+_CATEGORY_IDs=""
+# 登録者ID
 _CREATE_USER_ID=""
+# 担当者ID
+_ASSIGN_ID=""
+# 通知ユーザID (スペース区切り)
+_NOTIFIED_USER_IDs=""
