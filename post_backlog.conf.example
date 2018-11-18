@@ -1,0 +1,19 @@
+# スペース名 (e.g.: https://***.backlog.jp)
+_SPACE="example"
+# API Key
+_API_KEY=""
+
+# get_backlog_ids で使用するデフォルト値(オプション付与優先)
+# プロジェクト名
+_PROJECT="EXAMPLE"
+# 種別
+_ISSUE_TYPE="タスク"
+# 優先度
+_PRIORITY="中"
+
+# post_backlog で使用するデフォルト値(オプション付与優先)
+# get_backlog_ids の結果を入力
+_PROJECT_ID=""
+_ISSUE_TYPE_ID=""
+_PRIORITY_ID=""
+_CREATE_USER_ID=""
