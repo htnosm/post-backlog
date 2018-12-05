@@ -18,7 +18,7 @@ ERR_PROC() {
 }
 GENERATE_URL() {
   _API="${1}"
-  _URL="https://${_SPACE}.backlog.jp/${_API}?apiKey=${_API_KEY}"
+  _URL="https://${_SPACE}.backlog.jp${_API}?apiKey=${_API_KEY}"
   echo "${_URL}"
 }
 
