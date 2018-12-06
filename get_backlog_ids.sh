@@ -51,7 +51,7 @@ _RES_ISSUE_TYPE_ID=$(curl -f -s -S "${_URL}" | jq -r '.[] | select(.name == "'${
 
 # 優先度ID取得
 _URL=$(GENERATE_URL "/api/v2/priorities")
-_RES_ISSUE_TYPE_ID=$(curl -f -s -S "${_URL}" | jq -r '.[] | select(.name == "'${_PRIORITY}'").id')
+_RES_PRIORITY_ID=$(curl -f -s -S "${_URL}" | jq -r '.[] | select(.name == "'${_PRIORITY}'").id')
 
 # ユーザリスト取得
 _URL=$(GENERATE_URL "/api/v2/projects/${_RES_PROJECT_ID}/users")
@@ -82,7 +82,7 @@ fi
 cat <<_EOF
 プロジェクト: ${_PROJECT} ( ${_RES_PROJECT_ID:-"存在しません"} )
 種別: ${_ISSUE_TYPE} ( ${_RES_ISSUE_TYPE_ID:-"存在しません"} )
-優先度: ${_PRIORITY} ( ${_RES_ISSUE_TYPE_ID:-"存在しません"} )
+優先度: ${_PRIORITY} ( ${_RES_PRIORITY_ID:-"存在しません"} )
 登録者: ${_RES_CREATE_USER} ( ${_RES_CREATE_USER_ID:-"存在しません"} )
 カテゴリー: ${_CATEGORIES} ( ${_RES_CATEGORY_IDs})
 _EOF
